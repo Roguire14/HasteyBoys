@@ -49,8 +49,9 @@ public class HasteyBoysListeners implements Listener {
 		
 		if(!plugin.getStatus()) return;
 		
-		if(items.contains(e.getRecipe().getResult()))
-			e.getInventory().setResult(addEnchant(e.getRecipe().getResult()));
+		if(!items.contains(e.getRecipe().getResult())) return;
+		
+		e.getInventory().setResult(addEnchant(e.getRecipe().getResult()));
 		
 	}
 
