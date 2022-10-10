@@ -1,0 +1,9 @@
+version: 0.1
+author: Roguire14
+main: fr.roguire.hasteyboys.HasteyBoys
+name: HasteyBoys
+commands:
+  hasteyboys:
+    description: "Commande pour gérer le plugin"
+    usage: /<command>
+    aliases: [hb]
